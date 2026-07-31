@@ -1,3 +1,4 @@
+[Rule]
 #
 # REJECT
 IP-CIDR,194.221.250.50/32,REJECT-DROP,no-resolve // telegram阻断劣质节点
