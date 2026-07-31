@@ -29,7 +29,7 @@ DOMAIN-SUFFIX,plex.tv,DIRECT // Plex
 DOMAIN-SUFFIX,plex.direct,DIRECT // Plex
 #
 # lxj.ink 业务
-DOMAIN,substore.lxj.ink,自建节点-SMART // Added for: substore.lxj.ink:443
+DOMAIN,substore.lxj.ink,香港策略-SELECT // Added for: substore.lxj.ink:443
 DOMAIN,nas.lxj.ink,DIRECT
 #
 # 分流日本
