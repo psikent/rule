@@ -1,5 +1,6 @@
 #
 # REJECT
+DOMAIN,deepmind.google
 IP-CIDR,194.221.250.50/32,REJECT-DROP,no-resolve // telegram阻断劣质节点
 IP-CIDR,0.0.0.0/32,REJECT,no-resolve // 防止应用循环请求
 AND,((DOMAIN-SUFFIX,xiaohongshu.com,extended-matching), (DEST-PORT,443), (PROTOCOL,UDP)),REJECT // 小红书阻断QUIC
