@@ -3,13 +3,13 @@
 # REJECT
 
 #
-IP-CIDR,194.221.250.50/32,REJECT-DROP,no-resolve // telegram阻断劣质节点
-IP-CIDR,0.0.0.0/32,REJECT,no-resolve // 防止应用循环请求
-AND,((DOMAIN-SUFFIX,xiaohongshu.com,extended-matching), (DEST-PORT,443), (PROTOCOL,UDP)),REJECT  # 小红书阻断QUIC
-DOMAIN,a.f-0.cc,REJECT // 磨题帮广告
-DOMAIN,mssdk.volces.com,REJECT // 磨题帮广告
-DOMAIN,log-api.pangolin-sdk-toutiao-b.com,REJECT // 磨题帮广告
-DOMAIN,autoupdate.termius.com,REJECT // 禁止termius自动更新
+IP-CIDR,194.221.250.50/32,REJECT-DROP,no-resolve  // telegram阻断劣质节点
+IP-CIDR,0.0.0.0/32,REJECT,no-resolve  // 防止应用循环请求
+AND,((DOMAIN-SUFFIX,xiaohongshu.com,extended-matching), (DEST-PORT,443), (PROTOCOL,UDP)),REJECT  // 小红书阻断QUIC
+DOMAIN,a.f-0.cc,REJECT  // 磨题帮广告
+DOMAIN,mssdk.volces.com,REJECT  // 磨题帮广告
+DOMAIN,log-api.pangolin-sdk-toutiao-b.com,REJECT  // 磨题帮广告
+DOMAIN,autoupdate.termius.com,REJECT  // 禁止termius自动更新
 # 【强力】拦截字节系通用广告联盟 (底部横幅)
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,bytegecko.com,REJECT
@@ -20,18 +20,18 @@ DOMAIN-SUFFIX,zijieapi.com,REJECT
 DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 #
 # DIRECT
-AND,((DEST-PORT,123), (PROTOCOL,UDP)),DIRECT // 对时
-DOMAIN-SUFFIX,istrongcloud.com,DIRECT // Added for: https://tf02.istrongcloud.com/member/v1.2/home?r=1758416270941&tabBarHeight=89
-DOMAIN,fairplay.l.qq.com,DIRECT // 腾讯视频超前点播
-DOMAIN,cache.video.iqiyi.com,DIRECT // 爱奇艺
-DOMAIN,hudong.alicdn.com,DIRECT,extended-matching // 支付宝跳转淘宝
-DOMAIN,ib.snssdk.com,DIRECT // 今日头条白名单
+AND,((DEST-PORT,123), (PROTOCOL,UDP)),DIRECT  // 对时
+DOMAIN-SUFFIX,istrongcloud.com,DIRECT  // Added for: https://tf02.istrongcloud.com/member/v1.2/home?r=1758416270941&tabBarHeight=89
+DOMAIN,fairplay.l.qq.com,DIRECT  // 腾讯视频超前点播
+DOMAIN,cache.video.iqiyi.com,DIRECT  // 爱奇艺
+DOMAIN,hudong.alicdn.com,DIRECT,extended-matching  // 支付宝跳转淘宝
+DOMAIN,ib.snssdk.com,DIRECT  // 今日头条白名单
 DOMAIN-SUFFIX,ip.sb,DIRECT
-DOMAIN-SUFFIX,plex.tv,DIRECT // Plex
-DOMAIN-SUFFIX,plex.direct,DIRECT // Plex
+DOMAIN-SUFFIX,plex.tv,DIRECT  // Plex
+DOMAIN-SUFFIX,plex.direct,DIRECT  // Plex
 #
 # lxj.ink 业务
-DOMAIN,substore.lxj.ink,香港策略-SELECT // Added for: substore.lxj.ink:443
+DOMAIN,substore.lxj.ink,香港策略-SELECT  // Added for: substore.lxj.ink:443
 DOMAIN,nas.lxj.ink,DIRECT
 #
 # 分流日本
