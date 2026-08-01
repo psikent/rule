@@ -21,12 +21,12 @@ DOMAIN-SUFFIX,dig.bdurl.net,REJECT
 #
 # DIRECT
 AND,((DEST-PORT,123), (PROTOCOL,UDP)),DIRECT  // 对时
-DOMAIN-SUFFIX,istrongcloud.com,DIRECT  // Added for: https://tf02.istrongcloud.com/member/v1.2/home?r=1758416270941&tabBarHeight=89
+DOMAIN-SUFFIX,istrongcloud.com,DIRECT  // 台风预警
 DOMAIN,fairplay.l.qq.com,DIRECT  // 腾讯视频超前点播
 DOMAIN,cache.video.iqiyi.com,DIRECT  // 爱奇艺
 DOMAIN,hudong.alicdn.com,DIRECT,extended-matching  // 支付宝跳转淘宝
 DOMAIN,ib.snssdk.com,DIRECT  // 今日头条白名单
-DOMAIN-SUFFIX,ip.sb,DIRECT
+DOMAIN-SUFFIX,ip.sb,DIRECT  // ip测试
 DOMAIN-SUFFIX,plex.tv,DIRECT  // Plex
 DOMAIN-SUFFIX,plex.direct,DIRECT  // Plex
 #
