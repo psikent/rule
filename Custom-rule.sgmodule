@@ -1,7 +1,9 @@
-[Rule]
-#
-# REJECT
+#!name=Custom-rule
+#!category=1️⃣本地定制
+#!desc=自定义规则，会出现在rule顶部，优先级最高
+#!url=https://raw.githubusercontent.com/psikent/rule/refs/heads/main/Custom-rule.sgmodule
 
+[Rule]
 #
 # REJECT
 IP-CIDR,194.221.250.50/32,REJECT-DROP,no-resolve  // telegram阻断劣质节点
