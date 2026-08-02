@@ -3,6 +3,7 @@
 #!desc=自定义规则，会出现在rule顶部，优先级最高
 #!url=https://raw.githubusercontent.com/psikent/rule/refs/heads/main/Custom-rule.sgmodule
 [Rule]
+DOMAIN-SUFFIX,reddit.com,美国策略-SELECT,extended-matching  // reddit
 DOMAIN-SUFFIX,appinn.net,香港策略-SELECT,extended-matching
 #
 # REJECT
