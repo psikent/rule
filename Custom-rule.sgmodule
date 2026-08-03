@@ -7,7 +7,7 @@
 # REJECT
 IP-CIDR,194.221.250.50/32,REJECT-DROP,pre-matching,no-resolve  // telegram阻断劣质节点
 IP-CIDR,0.0.0.0/32,REJECT,pre-matching,no-resolve  // 防止应用循环请求
-AND,((DOMAIN-SUFFIX,xiaohongshu.com,extended-matching), (DEST-PORT,443), (PROTOCOL,UDP)),REJECT  // 小红书阻断QUIC
+AND,((DOMAIN-SUFFIX,xiaohongshu.com,extended-matching), (DEST-PORT,443), (PROTOCOL,UDP)),REJECT,pre-matching  // 小红书阻断QUIC
 DOMAIN,a.f-0.cc,REJECT,pre-matching  // 磨题帮广告
 DOMAIN,mssdk.volces.com,REJECT,pre-matching  // 磨题帮广告
 DOMAIN,log-api.pangolin-sdk-toutiao-b.com,REJECT,pre-matching  // 磨题帮广告
