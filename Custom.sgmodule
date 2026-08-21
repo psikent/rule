@@ -35,6 +35,7 @@ DOMAIN-SUFFIX,plex.direct,DIRECT,extended-matching  // Plex
 # lxj.ink 业务
 DOMAIN,substore.lxj.ink,香港策略-SELECT,extended-matching  // Added for: substore.lxj.ink:443
 DOMAIN,nas.lxj.ink,DIRECT,extended-matching
+DOMAIN,workplan.lxj.ink,DIRECT,extended-matching
 # 分流香港
 DOMAIN-SUFFIX,appinn.net,香港策略-SELECT,extended-matching
 # 分流日本
