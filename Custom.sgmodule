@@ -3,6 +3,7 @@
 #!category=1️⃣本地定制
 #!desc=自定义规则与脚本，会出现在rule顶部，优先级最高（含 NAS 分流解析 + 开关检测三合一脚本）
 [Rule]
+DOMAIN,userlocations.googleapis.com,美国策略-SELECT,extended-matching  // google地理位置判断
 #
 # REJECT
 IP-CIDR,194.221.250.50/32,REJECT-DROP,pre-matching,no-resolve  // telegram阻断劣质节点
