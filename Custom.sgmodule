@@ -45,7 +45,6 @@ DOMAIN-SUFFIX,dmm.com,日本策略-SELECT,extended-matching
 DOMAIN-SUFFIX,reddit.com,美国策略-SELECT,extended-matching  // reddit
 DOMAIN,userlocations.googleapis.com,美国策略-SELECT,extended-matching  // google地理位置判断
 DOMAIN-SUFFIX,appinn.com,美国策略-SELECT,extended-matching  // 小众软件
-
 [Script]
 nas-split = type=dns, script-path=scripts/nas-split.js, engine=jsc
 开关检测三合一 = type=cron, cronexp="*/30 * * * *", script-path=scripts/开关检测三合一.js, timeout=30, argument="notification=true", engine=jsc
