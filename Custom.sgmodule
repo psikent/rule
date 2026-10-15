@@ -45,6 +45,3 @@ DOMAIN-SUFFIX,appinn.com,美国策略-SELECT,extended-matching  // 小众软件
 
 [Script]
 开关检测三合一 = type=cron, cronexp="*/30 * * * *", script-path=scripts/开关检测三合一.js, timeout=30, argument="notification=true", engine=jsc
-
-[Host]
-nas.lxj.ink = script:nas-split
