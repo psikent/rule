@@ -1,7 +1,7 @@
 #!url=https://raw.githubusercontent.com/psikent/rule/refs/heads/main/Custom.sgmodule
 #!name=🔗Custom
 #!category=1️⃣本地定制
-#!desc=自定义规则与脚本，会出现在rule顶部，优先级最高（含 NAS 分流解析 + 开关检测三合一脚本）
+#!desc=自定义规则与脚本，会出现在rule顶部，优先级最高（含开关检测三合一脚本）
 [Rule]
 #
 # REJECT
